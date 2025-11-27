@@ -1,0 +1,166 @@
+/* Import premium fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+/* 🔥 Advanced Animated Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #1f1c2c, #7a64e9, #6a82fb, #fc5c5c);
+  background-size: 300% 300%;
+  animation: backgroundMove 12s ease infinite;
+}
+
+/* Smooth gradient animation */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🔥 Premium Glass Card */
+.age-container {
+  width: 460px;
+  padding: 35px;
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.age-header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+
+  color: #ffffff;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Section */
+.age-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.age-input label {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 🔥 Soft glowing input */
+.age-dob-input {
+  width: 260px;
+  padding: 12px 15px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.age-dob-input:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Button container */
+.age-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* 🔥 Ultra-Futuristic Neon Button */
+.calculate-btn {
+  width: 330px;
+  height: 55px;
+
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  box-shadow: 0 0 15px rgba(0, 51, 255, 0.6), 0 0 40px rgba(0, 120, 255, 0.4);
+
+  transition: 0.25s ease-in-out;
+}
+
+/* Glowing hover effect */
+.calculate-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(87, 96, 138, 0.8), 0 0 50px rgba(0, 140, 255, 0.6),
+    0 0 80px rgba(0, 120, 255, 0.5);
+}
+
+.calculate-btn:active {
+  transform: scale(0.95);
+}
+
+/* Age result */
+.age-result {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 15px;
+  font-weight: 600;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .age-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .calculate-btn {
+    width: 100%;
+  }
+}
